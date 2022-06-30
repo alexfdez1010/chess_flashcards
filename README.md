@@ -4,17 +4,17 @@ A script to generate chess flashcards for Anki
 
 ## Use Cases
 
-The idea of this script is from a pgn (Portable Game Notation) get a a Anki Package ready for use in the homonymous program. Thus, it will allow to 
+The idea of this script is from a pgn (Portable Game Notation) get an Anki Package ready for use in the homonymous program. Thus, it will allow to 
 memorise chess openings using spaced repetition, which is one of the most effective ways of learning.
 
 ## Input and output
 
-As commented in the previous part, the input is a pgn and the output a Anki Package. The input is recommended that it be prepared in a way that 
+As commented in the previous part, the input is a pgn and the output an Anki Package. The input is recommended that it be prepared in a way that 
 the side of the player only plays one move in a position (in other case the program will select the principal variant move), but different moves 
-in same position from the opposite side are allowed and it will be taken into account in the creation of the flashcards.
+in same position from the opposite side are allowed, and it will be taken into account in the creation of the flashcards.
 
-Regarding to the output each card will have four fields. The first two, notation and initial position, will show the previous moves and the current
-position in a image, respectively. The other two will appear only in the reverse of the card, they include the right move and the position as a result 
+Regards to the output each card will have four fields. The first two, notation and initial position, will show the previous moves and the current
+position in an image, respectively. The other two will appear only in the reverse of the card, they include the right move and the position as a result 
 of making that move.
 
 ## How it works?
@@ -22,7 +22,7 @@ of making that move.
 ### Script
 
 The script will take two mandatory parameters (the route to the input pgn and name of the deck to generate). There are several optional parameters. 
-You can check this parameters in the help of the program.
+You can check these parameters in the help of the program.
 
 ```
 usage: chess_flashcards.py [-h] [--start_move START_MOVE] [--end_move END_MOVE] [--is_black] [--verbose] [--color_light_squares COLOR_LIGHT_SQUARES]
@@ -53,8 +53,7 @@ optional arguments:
 For the script is only needed the chess and genanki libraries (obviously Python is needed).
 
 ```
-pip install chess
-pip install genanki
+pip install chess, genanki
 ```
 
 ## Acknowledgments
